@@ -48,5 +48,15 @@
       "rut": "14555666-3",
       "telefono": "944455568"
     }
+  },
+  {
+    "nombre": "Lulu",
+    "raza": "meztiza",
+    "edad": 4,
+    "dueno": {
+      "nombre": "Carla Pozo",
+      "rut": "12333444-6",
+      "telefono": "922233348"
+    }
   }
 ]
