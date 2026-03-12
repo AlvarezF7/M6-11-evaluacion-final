@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel ="stylesheet" href="./styles.css">
+    <title>Ministerio Mascotas</title>
+</head>
+<body>
+  <div id="container">
+    <header id="banner">
+        <img id="imgbanner" src="./img/banner2.jpg" alt="banner">
+    </header>
+    <h1 style="text-align:center">Ministerio de Mascotas</h1>
+    <p> Registra a tu peludo para que no se pierda</p>
+
+    <!-- Botones principales -->
+    <div id="mainButtons" style="text-align:center; margin:20px 0;">
+      <button class="main-btn" data-target="register">Registrar Mascota</button>
+      <button class="main-btn" data-target="findPet">Buscar Mascota</button>
+      <button class="main-btn" data-target="erasePet">Eliminar Mascota</button>
+    </div>
+
+    <div id="loader">🐾 🐾 🐾 🐾 🐾</div>
+    <div id="mensaje"></div>
+    
+
+    <!-- Secciones ocultas por defecto -->
+    <section id="register" style="display:none;">
+      <h3>Registrar Mascota</h3>
+      <form id="formRegister">
+        <h4>Datos Mascota</h4>
+        <input id="petName" name="nombre" placeholder="Nombre mascota" required>
+        <input id="petBreed" name="raza" placeholder="Raza" required>
+        <input id="petAge" name="edad" type="number" placeholder="Edad" required>
+        <h4>Datos Dueño</h4>
+        <input id="ownerName" name="duenoNombre" placeholder="Nombre dueño" required>
+        <input id="ownerRut" name="duenoRut" placeholder="Rut dueño" required>
+        <input id="ownerPhone" name="duenoTelefono" placeholder="Telefono contacto" required>
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+
+    <section id="findPet" style="display:none;">
+      <h3>Buscar Mascotas</h3>
+      <form id="formFindName">
+        <input id="searchName" name="nombre" placeholder="Buscar por nombre">
+        <button type="submit">Buscar</button>
+      </form>
+      <form id="formFindRut">
+        <input id="searchRut" name="rut" placeholder="Buscar por rut dueño">
+        <button type="submit">Buscar</button>
+      </form>
+    </section>
+   
+    <ul id="petList" class="pet-list-container"></ul>
+ 
+   
+    <section id="erasePet" style="display:none;">
+      <h3>Eliminar Mascotas</h3>
+      <form id="formDeleteName">
+        <input id="deleteName" name="nombre" placeholder="Eliminar por nombre">
+        <button type="submit">Eliminar</button>
+      </form>
+      <form id="formDeleteRut">
+        <input id="deleteRut" name="rut" placeholder="Eliminar por rut">
+        <button type="submit">Eliminar</button>
+      </form>
+    </section>
+  </div>
+       <!-- <h1 style="text-align:center">Registro Civil de Mascotas</h1>
+        <div id="loader">🐾 🐾 🐾 🐾 🐾</div>
+        <div id="mensaje"></div>
+        <section id="register">
+            <h3>Registrar Mascota</h3>
+            <form id="formRegister">
+            <h4>Datos Mascota</h4>
+            <input id="petName" name="nombre" placeholder="Nombre mascota" required>
+            <input id="petBreed" name="raza" placeholder="Raza" required>
+            <input id="petAge" name="edad" type="number" placeholder="Edad" required>
+            <h4>Datos Dueño</h4>
+            <input id="ownerName" name="duenoNombre" placeholder="Nombre dueño" required>
+            <input id="ownerRut" name="duenoRut" placeholder="Rut dueño" required>
+            <input id="ownerPhone" name="duenoTelefono" placeholder="Telefono contacto" required>
+            <button type="submit">Registrar</button>
+            </form>
+        </section>
+        <section id="findPet">
+            <h3>Buscar Mascotas</h3>
+
+            <form id="formFindName">
+            <input id="searchName" placeholder="Buscar por nombre ">
+            <button type="submit">Buscar</button>
+            </form>
+
+            <form id="formFindRut">
+            <input id="searchRut" placeholder="Buscar por rut dueño">
+            <button type="submit">Buscar</button>
+            </form>
+        </section>
+        <section id="erasePet">
+            <h3>Eliminar Mascotas</h3>
+            <form id="formDeleteName">
+            <input id="deleteName" placeholder="Eliminar por nombre">
+            <button type="submit">Eliminar</button>
+            </form>
+
+            <form id="formDeleteRut">
+            <input id="deleteRut" placeholder="Eliminar por rut">
+            <button type="submit">Eliminar</button>
+            </form>
+         </section>
+         <ul id="petList"></ul>
+    </div> -->
+  <script src="./app.js"></script>    
+</body>
+</html>

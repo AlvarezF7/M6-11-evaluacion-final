@@ -1,0 +1,52 @@
+[
+  {
+    "nombre": "Togo",
+    "raza": "Husky Siberiano",
+    "edad": 4,
+    "dueno": {
+      "nombre": "Juan Perez",
+      "rut": "11111111-2",
+      "telefono": "987654321"
+    }
+  },
+  {
+    "nombre": "Luna",
+    "raza": "Dalmata",
+    "edad": 3,
+    "dueno": {
+      "nombre": "Maria Pozo",
+      "rut": "12222222-2",
+      "telefono": "912312328"
+    }
+  },
+  {
+    "nombre": "Balto",
+    "raza": "Labrador",
+    "edad": 4,
+    "dueno": {
+      "nombre": "Victor Parra",
+      "rut": "11222333-8",
+      "telefono": "944455521"
+    }
+  },
+  {
+    "nombre": "Sakura",
+    "raza": "Gato",
+    "edad": 3,
+    "dueno": {
+      "nombre": "Marta Pozo",
+      "rut": "14222333-5",
+      "telefono": "945678925"
+    }
+  },
+  {
+    "nombre": "Locky",
+    "raza": "Mestizo",
+    "edad": 4,
+    "dueno": {
+      "nombre": "Javiera Contador",
+      "rut": "14555666-3",
+      "telefono": "944455568"
+    }
+  }
+]
